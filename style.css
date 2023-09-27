@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+*{
+    box-sizing: border-box;
+    font-family: 'Overpass';
+}
+
+body{
+    background-color: #151419;
+}
+
+.hidden{
+    display: none;
+}
+
+main, .resultScreen{
+    width: 450px;
+    height: 500px;
+    background-image: linear-gradient(to top, #171f29, #232a32);
+    margin: 5% auto;
+    border-radius: 25px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+main h1, .resultScreen h1{
+    color: #fff;
+}
+
+main p, .resultScreen p{
+    color: hsl(217, 12%, 63%);
+    margin: -10px 0 20px 0;
+    font-size: 16px;
+}
+
+.starDecoration{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #262e39;
+    border-radius: 50%;
+    margin-bottom: 25px;
+}
+
+.ratingContainer{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin: 20px 0 40px 0;
+}
+
+.ratingButton{
+    background-color: #262e39;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    color: hsl(217, 12%, 63%);
+    font-size: 14px;
+}
+
+.ratingButton:hover{
+    background-color: #7b8798;
+    cursor: pointer;
+    transition: 0.3s;
+    color: #fff;
+}
+
+.clicked{
+    background-color: #fe7512;
+    color: #fff;
+}
+
+.submitButton{
+    background-color: #fe7512;
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 30px;
+    border: none;
+}
+
+.submitButton:hover{
+    background-color: #fff;
+    color: #fe7512;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.submitButton:not(:hover){
+    transition: 0.3s;
+}
+
+.resultScreen p{
+    text-align: center;
+}
+
+.resultScreen{
+    align-items: center;
+    padding: 50px;
+}
+
+.resultScreen h2{
+    background-color: #272e38;
+    color: #fe7512;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: lighter;
+    padding: 10px 17px;
+}
+
+.resultScreen img{
+    margin: 20px 0 20px 0;
+}
